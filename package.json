@@ -1,0 +1,14 @@
+{
+  "name": "andela-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress open --config defaultCommandTimeout=10000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.1.0"
+  }
+}
