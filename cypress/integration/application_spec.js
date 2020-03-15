@@ -9,7 +9,7 @@ describe('Andela app test',() =>{
         cy.get('#okta-signin-password').type('Wonder_123')
         cy.get('#okta-signin-submit').click()
 
-        
+
     })
 
     it('should click on the button,skill and proficiency',() =>{
@@ -18,15 +18,17 @@ describe('Andela app test',() =>{
         cy.get('.add-skills__title').contains('Add Skill')
         cy.get('.add-skills__form-field__input').type('java')
         cy.wait(1500)
-       
-        cy.contains(/Java 8/i).eq(0).click()
+        //search through string for Java 8
+        cy.contains(/Java 8/i).eq(0).click() //.first
         cy.get('.mat-form-field-flex').click()
         cy.get('.mat-option-text').contains('Beginner').click()
         cy.get('#years-label').type('2')
         cy.wait(1000)
         cy.get('.add-skills__footer__actions__cta-button--add').contains('Add Skill').click()
-    
+        cy.get('.skills-category').contains('Java 8')
     })
+
+
 
 }) 
 
