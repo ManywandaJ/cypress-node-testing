@@ -1,0 +1,11 @@
+Steps to reproduce
+
+1. Login to the application using a mobile device
+2. Go to check-ins
+3. The view button disappears
+
+Expected
+The application should be responsive to the various screen sizes
+
+Actual
+The application is not responsive to the various screen sizes
